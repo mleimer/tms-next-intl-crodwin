@@ -16,7 +16,7 @@ In-Context translation is enabled wherever the `ENABLE_IN_CONTEXT_TRANSLATIONS=t
 It has been enabled for Vercel preview deployments, but is disabled for production deployments.
 Create a `.env.local` if you wish to enable In-Context translations locally.
 
-You must also be a member of the [Crowdin-Project](https://crowdin.com/project/tms-next-intl-crowdin)
+You must also be a member of the [Crowdin-Project](https://crowdin.com/project/tms-next-intl-crowdin) and the translation key must have been synched to Crowdin.
 
 To access the web app for environments where `ENABLE_IN_CONTEXT_TRANSLATIONS=true` is set, add `/ach` behind the host of the URL.
 If auto-redirection occurs to another language (two-letter-code), replace it with `ach`
@@ -36,4 +36,5 @@ If auto-redirection occurs to another language (two-letter-code), replace it wit
 
 Crowdin uses a source file and multiple translation files.
 The source may also be a translation at the same time.
-In this setup, the en.json file serves as the source as well as for the EN-translation.
+In this setup, the `en.json` file serves as the source as well as for the EN-translation.
+The sync happens [upon request](https://crowdin.com/project/tms-next-intl-crowdin/apps/system/github), or once every hour.
