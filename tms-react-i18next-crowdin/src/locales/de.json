@@ -3,6 +3,7 @@
     "title": "Hallo Welt von Crowdin!",
     "icu": "{count, plural, =0 {Niemand folgt dir (In-Context)} =1 {Jemand folgt dir (In-Context)} other {# folgen dir (In-Context)}}",
     "newKey": "New EN only translation key",
-    "richText": "You have <strong>20</strong> new messages!"
+    "richText": "You have <strong>20</strong> new messages!",
+    "devOnly": "DEV-Branch only key"
   }
 }
