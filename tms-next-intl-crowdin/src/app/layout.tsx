@@ -6,11 +6,19 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (<>
-        <Script id="tms">
-            {`var _jipt = [];
-            _jipt.push(['project', 'tms-next-intl-crowdin' ])`}
-        </Script>
-        <Script src="//cdn.crowdin.com/jipt/jipt.js" />
+        {
+            process.env.NODE_ENV !== 'production' || process.env.IS_PREVIEW_DEPLOYMENT === 'true' ? (
+                <>
+                    <Script id="tms">
+                        {
+                            `var _jipt = [];
+                             _jipt.push(['project', 'tms-next-intl-crowdin' ])`
+                        }
+                    </Script>
+                    <Script src="//cdn.crowdin.com/jipt/jipt.js" />
+                </>
+            ) : null
+        }
         {children}
     </>);
 }
