@@ -1,0 +1,3 @@
+files:
+  - source: /tms-next-intl-crowdin/messages/en.json
+    translation: /tms-next-intl-crowdin/messages/%two_letters_code%.json
