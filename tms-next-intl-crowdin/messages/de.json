@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "Hallo Welt von Crowdin!",
-    "icu": "{count, plural, =0 {No followers yet} =1 {One follower} other {# followers}}",
-    "richText": "<i>Hello</i> <b>world!</b>"
+    "icu": "{count, plural, =0 {Niemand folgt dir (In-Context)} =1 {Jemand folgt dir (In-Context)} other {# folgen dir (In-Context)}}",
+    "richText": "<i>Hallo</i> <b>In-Context-Welt!</b><i>Hey</i>"
   }
 }
