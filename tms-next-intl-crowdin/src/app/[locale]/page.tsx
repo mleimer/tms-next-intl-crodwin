@@ -12,5 +12,6 @@ export default function Index() {
                 b: (chunks) => <b>{chunks}</b>,
                 i: (chunks) => <i>{chunks}</i>
             })}</div>
+            <div>New EN only translation key: {t('newKey')}</div>
         </div>);
 }
