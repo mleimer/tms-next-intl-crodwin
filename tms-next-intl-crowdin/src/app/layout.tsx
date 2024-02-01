@@ -7,7 +7,7 @@ export default function RootLayout({
 }) {
     return (<>
         {
-            process.env.NODE_ENV !== 'production' || process.env.IS_PREVIEW_DEPLOYMENT === 'true' ? (
+            process.env.ENABLE_IN_CONTEXT_TRANSLATIONS === 'true' ? (
                 <>
                     <Script id="tms">
                         {

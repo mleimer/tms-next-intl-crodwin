@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Crowdin-Integration with Next.js and next-intl
 
-## Getting Started
+This small web app is built with Next.js, stored on GitHub and deployed on Vercel.
 
-First, run the development server:
+It uses `next-intl` for managing translations and [Crowdin](https://crowdin.com/project/tms-next-intl-crowdin) as a TMS with In-Context translation.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+`next-intl` is made for server components, but enforces [dynamic rendering](https://nextjs.org/docs/app/building-your-application/rendering/server-components#dynamic-rendering).
+[This is a limitation that next-intl aim to remove in the future, but as a stopgap solution, next-intl provides a temporary API that can be used to enable static rendering.](https://next-intl-docs.vercel.app/docs/getting-started/app-router#static-rendering)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## In-Context translation
+In-Context translation is a mechanism, which allows you to run the web app and translate the text in the browser.
+For Crowdin, the web app must be started in a pseudo language. For this project, `ach` is used as the pseudo-language.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+In-Context translation is enabled wherever the `ENABLE_IN_CONTEXT_TRANSLATIONS=true` environment variable is set.
+It has been enabled for Vercel preview deployments, but is disabled for production deployments.
+Create a `.env.local` if you wish to enable In-Context translations locally.
 
-## Learn More
+You must also be a member of the [Crowdin-Project](https://crowdin.com/project/tms-next-intl-crowdin)
 
-To learn more about Next.js, take a look at the following resources:
+To access the web app for environments where `ENABLE_IN_CONTEXT_TRANSLATIONS=true` is set, add `/ach` behind the host of the URL.
+If auto-redirection occurs to another language (two-letter-code), replace it with `ach`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Run web app locally
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Run `npm i` to install dependencies
+2. Run `npm run dev` to start the web app in development-mode
 
-## Deploy on Vercel
+## Deployments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* [Prod](https://tms-next-intl-crodwin.vercel.app/)
+* [Preview deployments](https://vercel.com/mleimer/tms-next-intl-crodwin/deployments)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Crowdin
+[Crowdin-Project](https://crowdin.com/project/tms-next-intl-crowdin)
