@@ -3,6 +3,7 @@
     "title": "Hello world!",
     "icu": "{count, plural, =0 {No followers yet} =1 {One follower} other {# followers}}",
     "newKey": "New EN only translation key",
-    "richText": "<i>Hello</i> <b>world!</b>"
+    "richText": "<i>Hello</i> <b>world!</b>",
+    "devOnly": "DEV-Branch only key"
   }
 }

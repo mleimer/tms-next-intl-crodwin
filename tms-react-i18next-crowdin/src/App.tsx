@@ -40,6 +40,7 @@ function App() {
             <div>Rich text:
                 <Trans t={t} i18nKey="richText" defaults="You have <strong>20</strong> new messages!"/>
             </div>
+            <div>DEV-Branch only key: {t('devOnly')}</div>
             <div>New EN only translation key: {t('newKey')}</div>
             <button onClick={() => i18n.changeLanguage('de')}>DE</button>
             <button onClick={() => i18n.changeLanguage('en')}>EN</button>
