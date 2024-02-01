@@ -33,3 +33,7 @@ If auto-redirection occurs to another language (two-letter-code), replace it wit
 
 ## Crowdin
 [Crowdin-Project](https://crowdin.com/project/tms-next-intl-crowdin)
+
+Crowdin uses a source file and multiple translation files.
+The source may also be a translation at the same time.
+In this setup, the en.json file serves as the source as well as for the EN-translation.
