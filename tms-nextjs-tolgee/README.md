@@ -24,4 +24,7 @@ NEXT_PUBLIC_TOLGEE_API_KEY=<your project API key>
 
 ## Deployment
 * https://app.tolgee.io/projects/5171
-* 
+
+
+## Chrome plugin for in-context translations
+https://chromewebstore.google.com/detail/tolgee-tools/hacnbapajkkfohnonhbmegojnddagfnj?pli=1
