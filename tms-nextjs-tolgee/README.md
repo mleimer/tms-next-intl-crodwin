@@ -24,7 +24,8 @@ NEXT_PUBLIC_TOLGEE_API_KEY=<your project API key>
 
 ## Deployment
 * https://app.tolgee.io/projects/5171
-
+* Production: https://tms-nextjs-tolgee.vercel.app/
+* Preview Deployments: https://vercel.com/mleimer/tms-nextjs-tolgee/deployments
 
 ## Chrome plugin for in-context translations
 https://chromewebstore.google.com/detail/tolgee-tools/hacnbapajkkfohnonhbmegojnddagfnj?pli=1
