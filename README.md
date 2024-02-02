@@ -14,6 +14,7 @@ Using `develop` and `main` branch is optional. Trunk based development is feasib
 - Screenshots cannot be taken in-context, but must be taken manually. Keys must be added manually on screenshot, as auto tagging feature did not work.
 - No React specific way to enable / disable in-context specific translations
 - No self-hosting possible. If GitLab & GitHub integrations are used, Crowdin requires full repo access.
+- Build required to deploy new translations, but deploying to a CDN is possible
 
 ##  Remarks
 - Multi-branch support brings complexity on how to sync translations across multiple branches. What should be re-imported? What should be copied over? Crowdin has some settings which allow a translator to translate each instance separately, or take over translations across all branches.
@@ -37,6 +38,7 @@ https://crowdin.com/pricing#annual
 - GitLab & GitHub integrations syncing and creating MR / PRs as required pending implementation Q2/2024
 - No Multi-branch support
 - UX to view screenshots for a translation within Tolgee is not that good / helpful
+- Build required to deploy new translations, but deploying to a CDN is possible (at a charge 10/25$/month)
 
 ## Pricing
 https://tolgee.io/pricing/self-hosted#pricing-toggle
