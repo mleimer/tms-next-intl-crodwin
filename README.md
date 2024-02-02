@@ -26,7 +26,7 @@ https://crowdin.com/pricing#annual
 # Tolgee
 
 ## Pros
-- In-context translations, but not for server components
+- In-context translations, but they don't apply immediately for server components.
 - Translation updates can be done in real-time, as translations get fetched from Tolgee upon loading the website (if configured like that)
 - Support for screenshots, which can be taken in-context
 - Self-hosting possible
